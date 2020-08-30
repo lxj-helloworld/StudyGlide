@@ -23,6 +23,14 @@ public class MemoryCache extends LruCache<String, Value> {
         super(maxSize);
     }
 
+    public MemoryCacheCallback getMemoryCacheCallback() {
+        return memoryCacheCallback;
+    }
+
+    public void setMemoryCacheCallback(MemoryCacheCallback memoryCacheCallback) {
+        this.memoryCacheCallback = memoryCacheCallback;
+    }
+
     /**
      * Author ： xiaojinli
      * Time ： 2020/8/30 5:45 PM
